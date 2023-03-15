@@ -1,8 +1,4 @@
-const { deleteCourse } = require('../controllers/courseController')
-const { editCourse } = require('../controllers/courseController')
-const { getCourse } = require('../controllers/courseController')
-const { createCourse } = require('../controllers/courseController')
-const { getAll } = require('../controllers/courseController')
+const {createCourse, getAll, getCourse, editCourse, deleteCourse}= require('../controllers/courseController')
 
 const courseRouter = require('express').Router()
 

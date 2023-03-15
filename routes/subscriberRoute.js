@@ -1,12 +1,7 @@
 const express = require('express');
 const subscriberRouter = express.Router();
 const app = express();
-const port = 3000;
-const { createSubscriber } = require('../controllers/subscriberController')
-const { getAllSubscribers } = require('../controllers/subscriberController')
-const { getSubscriber } = require('../controllers/subscriberController')
-const { deleteSubscriber } = require('../controllers/subscriberController')
-const { editSubscriber } = require('../controllers/subscriberController');
+const { createSubscriber, getAllSubscribers, editSubscriber, deleteSubscriber, getSubscriber } = require('../controllers/subscriberController')
 
 subscriberRouter.post('/subscribers/create', createSubscriber)
 subscriberRouter.get('/subscribers', getAllSubscribers)

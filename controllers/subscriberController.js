@@ -1,5 +1,5 @@
 const express = require("express");
-const subscribeRouter = express.Router();
+// const subscribeRouter = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const Subscriber = require("../models/subscriberModel");
