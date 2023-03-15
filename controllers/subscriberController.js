@@ -1,8 +1,8 @@
 const express = require("express");
-const router = express.Router();
+const subscribeRouter = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("../models/userModel");
+const Subscriber = require("../models/subscriberModel");
 
 // Create subscriber
 const createSubscriber =  async(req,res)=> {

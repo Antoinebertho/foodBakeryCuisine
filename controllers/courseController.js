@@ -1,4 +1,6 @@
 const Course = require("../models/courseModel")
+const express = require("express");
+const courseRouter = express.Router();
 
 // Create course
 const createCourse = async(req,res)=>{
