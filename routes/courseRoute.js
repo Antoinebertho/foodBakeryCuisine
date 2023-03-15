@@ -6,6 +6,6 @@ courseRouter.post('/courses/create',createCourse)
 courseRouter.get('/courses', getAll)
 courseRouter.get('/courses/:id', getCourse)
 courseRouter.put('/courses/:id/update', editCourse)
-courseRouter.delete('/api/user/:id/delete', deleteCourse)
+courseRouter.delete('/api/course/:id/delete', deleteCourse)
 
 module.exports = courseRouter
