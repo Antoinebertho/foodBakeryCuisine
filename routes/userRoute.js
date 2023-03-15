@@ -1,15 +1,6 @@
 const express = require('express');
 const userRouter = express.Router();
-const app = express();
-const port = 3000;
-const token = require('../controllers/userController')
-const { createUser } = require('../controllers/userController')
-const { getAllUsers } = require('../controllers/userController')
-const { getUser } = require('../controllers/userController')
-const { deleteUser } = require('../controllers/userController')
-const { editUser } = require('../controllers/userController')
-const { loginUser } = require('../controllers/userController')
-const { logoutUser } = require('../controllers/userController')
+const { createUser , getAllUsers, getUser, deleteUser, editUser, loginUser, logoutUser} = require('../controllers/userController')
 
 userRouter.post('/create', createUser)
 userRouter.get('/users', getAllUsers)
